@@ -1,9 +1,12 @@
+# ✅ Force GitHub Linguist to count everything as Java
+*.js linguist-vendored
+*.jsx linguist-vendored
+*.ts linguist-vendored
+*.tsx linguist-vendored
+*.json linguist-vendored
+*.css linguist-vendored
+*.html linguist-vendored
 
-
-# Make sure .java files are counted as Java
-*.java linguist-detectable=true
-*.java linguist-language=Java
-
-# Optional: Mark Spring config/resources as Java too
-*.xml linguist-language=Java
-*.properties linguist-language=Java
+# Optional: agar frontend pura ignore karna hai
+client/* linguist-vendored
+frontend/* linguist-vendored
