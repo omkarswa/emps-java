@@ -1,3 +1,11 @@
+# Ignore frontend (React) code for language stats
+/frontend/* linguist-vendored
+/client/* linguist-vendored
+
+# Make sure .java files are counted as Java
 *.java linguist-detectable=true
-*.js linguist-detectable=false
-*.jsx linguist-detectable=false
+*.java linguist-language=Java
+
+# Optional: Mark Spring config/resources as Java too
+*.xml linguist-language=Java
+*.properties linguist-language=Java
